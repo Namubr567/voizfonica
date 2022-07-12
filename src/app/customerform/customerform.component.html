@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body background="../../assets/Images/bckg2.jpg" style="background-repeat:no-repeat; background-size:cover; height: 90vh;" >
+<div class="container py-2 px-5 h-50">
+    <div class="row d-flex justify-content-center align-items-center h-200">
+        <div class="col-16 col-md-15 col-lg-10 col-xl-8">
+            <div class="card " style="background-color:white; margin-top:100px; margin-left: 120px;" >
+                <div class="card-body p-4 text-center">
+                    <div class="mb-md-8 mt-md-4 pb-4">
+                        
+                        <h3 class="font-size mb-2" style="font-weight: bolder;color: darkorange; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-stretch: extra-condensed;" > <u> CUSTOMER FORM </u></h3> <br>   
+                        
+                        <form (ngSubmit)="contactus()">
+                        <div class="mb-3 row">
+                            <label for="input-group-text" class="col-lg-3 col-form-label" style="font-size:  larger; font-family: Georgia, 'Times New Roman', Times, serif;">NAME</label>
+                            <div class="col-lg-8">
+                              <input type="text" [(ngModel)]="complains.name" name="name" class="form-control" placeholder="Enter your name">
+                            </div> 
+                          </div>
+                          <br>
+                          
+                        
+                        <div class="mb-5 row">
+                            <label for="inputPassword" class="col-lg-3 col-form-label" style="font-size: larger; font-family: Georgia, 'Times New Roman', Times, serif;">EMAIL-ID</label>
+                            <div class="col-lg-8">
+                              <input type="email" [(ngModel)]="complains.email" name="email" class="form-control" id="email-id" placeholder="Enter your valid email id">
+                            </div>
+                          </div>
+                          <div class="mb-2 row">
+                            <label for="inputPassword" class="col-lg-3 col-form-label" style="font-size: larger; font-family: Georgia, 'Times New Roman', Times, serif;">PHONE NO</label>
+                            <div class="col-lg-8">
+                              <input type="tel" [(ngModel)]="complains.phonenumber"  name="phonenumber" class="form-control" placeholder="Enter your phone number">
+                            </div>
+                          </div>
+                          <br>                                         
+                        <div class="d-grid gap-5 mx-auto">                            
+                            <input type="submit" name="submit" value="Submit" class="btn btn-primary"  style="font-size: x-large;">                               
+                          </div>
+                        </form>
+                        </div>
+                     
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer-->
+
+</body>
+</html>

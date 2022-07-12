@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+msg:string='';
   constructor() { }
 
   ngOnInit(): void {
   }
-
+public youClickedMe(msg:string):void{
+  this.msg=msg;
+}
 }

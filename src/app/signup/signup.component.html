@@ -1,0 +1,67 @@
+<div class="vh-100 gradient-custom">
+  <div class="container py-5 h-50">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5 w-50">
+      
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <div class="mb-md-1 mt-md-4 pb-2">
+             <h2 class="fw-bold mb-1 text-uppercase" style="font-family: 'Times New Roman', Times, serif; color:gold; font-size: xx-large;" >Sign Up</h2>
+              <p class="text-white mb-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: larger;">Welcome To VoizFonica</p><hr>
+              <form (ngSubmit)="signup()"  >
+
+                <div class="row">
+              <div class="form-outline form-white mb-4 col" >
+                  <label class="form-label" for="firstname" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Firstname</label>
+                  <input  type="text" id="firstname" class="form-control form-control-lg" name="firstname"  [(ngModel)]="newuser.firstname"   />
+          
+                 
+                </div>
+                <div class="form-outline form-white mb-4 col">
+                  <label class="form-label" for="lastname" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lastname</label>
+                  <input type="text" id="lastname" class="form-control form-control-lg" name="lastname" [(ngModel)]="newuser.lastname" />
+                  
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="form-outline form-white mb-4 col">
+                  <label class="form-label" for="email" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Email</label>
+                  <input type="email" id="email" class="form-control form-control-lg" name="email" [(ngModel)]="newuser.email"  />
+                 
+                </div>
+                <div class="form-outline form-white mb-4 col">
+                  <label class="form-label" for="phone" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Phone Number</label>
+                  <input type="tel" id="phone" class="form-control form-control-lg"  name="phno"  [(ngModel)]="newuser.phno" />
+                  
+                </div>
+
+              </div>
+
+              <div class="row">
+              
+                <div class="form-outline form-white mb-4 col">
+                  <label class="form-label" for="password" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Enter Password</label>
+                  <input type="password" id="password" class="form-control form-control-lg" name="pasword"  [(ngModel)]="newuser.password" />
+                  
+                </div>
+                <div class="form-outline form-white mb-4 col" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                  <label class="form-label" for="confirmpassword">Confirm Password</label>
+                  <input type="password" id="confirmpassword" class="form-control form-control-lg" name="confirmpassword" [(ngModel)]="newuser.confirmpassword" />
+                  
+                </div>
+              </div>
+                <!-- <button class="btn btn-outline-dark btn-lg px-5" type="submit">Sign Up</button> -->
+                <input type="submit" class="btn btn-primary btn-lg px-5 mt-3" value="Sign Up" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: xx-large;">
+                
+              </form>
+              </div>
+              </div> 
+              
+            </div> 
+            
+          </div> 
+     </div>  
+
+      </div>   
+</div>

@@ -8,46 +8,50 @@
 <body>
     <!-- <p>navbar works!</p> -->
     <div class="card">
-        <nav class="navbar navbar-expand-lg navbar-light " style="background-color:gold;" >
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgba(255, 217, 0, 0.467);" >
             <div class="container-fluid">
-                <a class="navbar-brand px-4 mx-4" style="font-size: medium; font-style: italic;  font-weight: bolder;font-family: Verdana, Geneva, Tahoma, sans-serif; font-stretch: expanded;" href="#">VOIZFONICA</a>
+                <a><img src="../../assets/Images/4.jpg" style="height: 55%; width: 70%;"></a>
+                <a class="navbar-brand px-4 mx-4" style="font-size:x-large; font-style: italic;  font-weight: 
+                bolder;font-family: Verdana, Geneva, Tahoma, sans-serif; font-stretch: expanded;" href="#">VOIZFONICA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+            </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto " style="font-size: x-large; padding: 3; font-family: 'Times New Roman', Times, serif;"  >
+                    <ul class="navbar-nav ms-auto " style="font-size: xx-large; padding: 3; font-family: 'Times New Roman', Times, serif;"  >
                         <!-- mb-2 mb-lg-0 -->
                         <li class="nav-item"  >
-                            <a class="nav-link px-4  " aria-current="page" href="#">Home</a>
+                            <a class=" btn btn-primary btn-lg px-4  " aria-current="page" routerLink="/" role="button">Home</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link px-4  " href="#">Plans </a>
+                            <a class=" btn btn-secondary btn-lg px-4  " routerLink="/plans" role="button">Plans </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class=" btn btn-success btn-lg dropdown-toggle"  id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Login
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Existing User Login</a></li>
-                                <li><a class="dropdown-item" href="#">Admin Login</a></li>
+                                <li><a class="dropdown-item" routerLink="/userlogin">Existing User Login</a></li>
+                                <li><a class="dropdown-item" routerLink="/adminlogin">Admin Login</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#"> New User Sign-up</a></li>
+                                <li><a class="dropdown-item" routerLink="/signup"> New User Sign-up</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-4 " href="#">About Us</a>
+                            <a class="btn btn-danger btn-lg px-4 " routerLink="/aboutus">About Us</a>
                         </li>
                         <li class="nav-item">
                             
-                            <a class="nav-link px-4 "  href="#">Contact Us</a>
+                            <a class=" btn btn-warning btn-lg px-4 " routerLink="custform">Contact Us</a>
                             
                         </li>
                         
+                     
                         
                     </ul>
                    
